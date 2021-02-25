@@ -1,0 +1,87 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    width: 500px;
+    height: 90vh;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: azure;
+    border-radius: 60px;
+    border: 3px solid cadetblue;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0 0 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.chat {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 75vh;
+}
+
+.messages {
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.messages li {
+    max-width: 95%;
+    margin: 5px 0;
+    padding: 5px 10px 7px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    overflow-wrap: anywhere;
+}
+
+.form {
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form__input {
+    width: 70%;
+    padding: 5px;
+    outline: none;
+    font-family: inherit;
+}
+
+.form__button {
+    width: 25%;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
